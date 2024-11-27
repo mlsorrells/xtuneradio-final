@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="js/main.js"></script>
+    <script src="js/listener.js"></script>
+    <script src="js/timeslot.js" type="module"></script>
+    <script src="js/timeslot-renderer.js" type="module"></script>
+    <title>xTune Radio - Manager Portal</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div id="title-bar">
+            <img src="images/nav-burger.png" width="30px" height="30px" id="nav-burger">
+            <div id="nav-burger-menu">
+                hmm
+            </div>
+            <div id="header-logo"><h1>xTune Radio Playlist Manager</h1></div>
+            <img src="images/user-icon.png" id="user-icon">
+            <div id="user-menu">
+                <div id="user-menu-lead"></div>
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="content-header-top">Manager Portal</div>
+        <div class="content-container-with-header">
+            
+            <h1>Report for <%= timeslot.startTime %> - <%= timeslot.endTime %></h1>
+            <p>Assigned DJ: <%= timeslot.assignedDJ.username %></p>
+            <p>Playlist: <%= timeslot.songs.join(', ') %></p>
+
+            <h1 style="text-align:center">Playlist Report</h1>
+            <span>Timeslot: 10:00 AM - 12:00 PM</span><br />
+            <span>DJ: Bob Evans</span>
+            <table style="width:100%;margin-top:15px">
+                <tr>
+                    <th>Producer Assigned Songs</th>
+                    <th>DJ Played Songs</th>
+                </tr>
+                <tr>
+                    <td>Track: Lucid Dreams<br />Artist: Juice WRLD</td>
+                    <td>Track: 1999<br />Artist: Charli xcx, Troye Sivan</td>
+                </tr>
+                <tr>
+                    <td>Track: Fog of War<br />Artist: Young Dreams</td>
+                    <td>Track: King's Dead (with Kendrick Lamar, Future & James Blake)<br />Artist: Jay Rock, Kendrick Lamar, Future, James Blake</td>
+                </tr>
+                <tr>
+                    <td>Track: Bad Liar<br />Artist: Selena Gomez</td>
+                    <td>Track: Slow Motion<br />Artist: Trey Songz</td>
+                </tr>
+                <tr>
+                    <td>Track: Babe I'm Gonna Leave You - 1990 Remaster<br />Artist: Led Zeppelin</td>
+                    <td>Track: Play Hard (feat. Ne-Yo & Akon)<br />Artist: David Guetta, Ne-Yo, Akon</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
