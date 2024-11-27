@@ -40,14 +40,6 @@
             <h1 style="text-align:center">Select a Day</h1>
             <nav>
                 <ul>
-                    <li class="day"><span style="font-weight:bold">Mon. 11/4/24</span><span><a href="times.html">View Times</a></span></li>
-                    <li class="day"><span style="font-weight:bold">Tues. 11/5/24</span><a href="times.html">View Times</a></span></li>
-                    <li class="day"><span style="font-weight:bold">Wed. 11/6/24</span><a href="times.html">View Times</a></span></li>
-                    <li class="day"><span style="font-weight:bold">Thu. 11/7/24</span><a href="times.html">View Times</a></span></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
                     <% days.forEach(day => { %>
                         <li><a href="/times/<%= day %>"><%= day %></a></li>
                     <% }) %>

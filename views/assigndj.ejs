@@ -28,9 +28,8 @@
             <div id="user-menu">
                 <div id="user-menu-lead"></div>
                 <ul>
-                    <li>Option 1</li>
-                    <li>Option 2</li>
-                    <li>Option 3</li>
+                    <li>Login</li>
+                    <li>Logout</li>
                 </ul>
             </div>
         </div>
@@ -38,17 +37,6 @@
     <section>
         <div class="content-header-top">Manager Portal</div>
         <div class="content-container-with-header">
-            <h1 style="text-align:center">Assign DJ</h1>
-            <span>Timeslot: 10:00 AM - 12:00 PM</span><br />
-            <span>Current Assigned DJ: Bob Evans</span>
-            <hr />
-            <form name="assign-dj" action="#" method="POST" onsubmit="validateDJForm()">
-                <label for="dj-list">Select a DJ: </label>
-                <input type="text" name="dj" placeholder="Enter a DJ here" required/>
-                <br />
-                <input type="submit" name="submit" value="Change DJ" />
-            </form>
-
             <h1>Assign DJ for <%= timeslot.startTime %> - <%= timeslot.endTime %></h1>
             <form action="/assigndj/<%= timeslot._id %>" method="POST">
             <input type="hidden" name="day" value="<%= timeslot.day %>">

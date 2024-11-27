@@ -28,9 +28,8 @@
             <div id="user-menu">
                 <div id="user-menu-lead"></div>
                 <ul>
-                    <li>Option 1</li>
-                    <li>Option 2</li>
-                    <li>Option 3</li>
+                    <li>Login</li>
+                    <li>Logout</li>
                 </ul>
             </div>
         </div>
@@ -38,36 +37,9 @@
     <section>
         <div class="content-header-top">Manager Portal</div>
         <div class="content-container-with-header">
-            
             <h1>Report for <%= timeslot.startTime %> - <%= timeslot.endTime %></h1>
             <p>Assigned DJ: <%= timeslot.assignedDJ.username %></p>
             <p>Playlist: <%= timeslot.songs.join(', ') %></p>
-
-            <h1 style="text-align:center">Playlist Report</h1>
-            <span>Timeslot: 10:00 AM - 12:00 PM</span><br />
-            <span>DJ: Bob Evans</span>
-            <table style="width:100%;margin-top:15px">
-                <tr>
-                    <th>Producer Assigned Songs</th>
-                    <th>DJ Played Songs</th>
-                </tr>
-                <tr>
-                    <td>Track: Lucid Dreams<br />Artist: Juice WRLD</td>
-                    <td>Track: 1999<br />Artist: Charli xcx, Troye Sivan</td>
-                </tr>
-                <tr>
-                    <td>Track: Fog of War<br />Artist: Young Dreams</td>
-                    <td>Track: King's Dead (with Kendrick Lamar, Future & James Blake)<br />Artist: Jay Rock, Kendrick Lamar, Future, James Blake</td>
-                </tr>
-                <tr>
-                    <td>Track: Bad Liar<br />Artist: Selena Gomez</td>
-                    <td>Track: Slow Motion<br />Artist: Trey Songz</td>
-                </tr>
-                <tr>
-                    <td>Track: Babe I'm Gonna Leave You - 1990 Remaster<br />Artist: Led Zeppelin</td>
-                    <td>Track: Play Hard (feat. Ne-Yo & Akon)<br />Artist: David Guetta, Ne-Yo, Akon</td>
-                </tr>
-            </table>
         </div>
     </section>
 </body>
